@@ -1,0 +1,52 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: url('BG.png'); /* Путь к вашей прозрачной картинке */
+
+    background-size: cover;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.94); /* Цвет фона с прозрачностью */
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    margin-right: 20px;
+}
+
+.logo img {
+    max-width: 100px;
+}
+
+.header-info h1 {
+    margin: 0;
+}
+
+#about {
+    flex: 1;
+    padding: 20px;
+}
+
+A {
+    color: red; /* Цвет ссылок */
+}
+A:visited {
+    color: #cecece; /* Цвет посещенных ссылок */
+}
+A:active {
+    color: #ffff00; /* Цвет активных ссылок */
+}
+
+footer {
+    background-color: #000000;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
