@@ -5,7 +5,7 @@ const backgrounds = [
     'url("IMG/BG3.jpg")',
     'url("IMG/BG4.jpg")'
 ];
-alert(1);
+
 let currentIndex = 0;
 
 setInterval(() => {
@@ -46,7 +46,7 @@ CommentsUpdate();
 function CommentsUpdate() {
     const commentsDiv = document.getElementById('commentsDiv');
     commentsDiv.innerHTML = '';
-    fetch('http://gruzilkins.com.swtest.ru/PHP/get_comments.php') // Запрос к PHP-скрипту для получения комментариев
+    fetch('https://gruzilkins.com.swtest.ru/PHP/get_comments.php') // Запрос к PHP-скрипту для получения комментариев
         .then(response => response.json())
         .then(data => {
             if (data.success) {
