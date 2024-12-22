@@ -5,7 +5,7 @@ const backgrounds = [
     'url("IMG/BG3.jpg")',
     'url("IMG/BG4.jpg")'
 ];
-
+alert(1);
 let currentIndex = 0;
 
 setInterval(() => {
