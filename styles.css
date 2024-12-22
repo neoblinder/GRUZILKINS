@@ -1,0 +1,104 @@
+body {font-family:'Monospaced',sans-serif; margin:0; padding:0; display:flex; flex-direction:column;
+    transition: background 2s ease;
+    min-height:100vh; background:url("IMG/BG1.jpg");
+    background-repeat:no-repeat; background-position:center center; background-attachment:fixed; -webkit-background-size:cover; -moz-background-size:cover; -o-background-size:cover; background-size:cover; color:#eee; / Light gray text / overflow-x:hidden; / Prevent horizontal scrollbar / }
+
+header {background:linear-gradient(to right,#000000,#000000); / Blue gradient header /color:white; padding:20px; display:flex; align-items:center; justify-content:space-between; box-shadow:0 2px 5px rgba(0,0,0,0.2)}
+
+
+
+
+* {padding:0; margin:0; box-sizing:border-box; font-family:Arial,Helvetica,sans-serif}
+.hero-section {display:flex; flex-direction:column; background-color:rgb(0,12,34); height:100vh; width:100%}
+.navbar {display:flex; background-color:black; padding:15px 20px; color:white; width:100%; align-items:center; position:fixed}
+.data-container {width:100%; max-width:1200px; display:flex; align-items:center}
+.logo {width:90px}
+.logo img {width:100%; height:auto}
+.menu-data {margin-right:auto; display:flex; align-items:center}
+a {text-decoration:none; color:white; padding:10px 15px; border-radius:25px; transition:background-color 0.3s ease-in; margin:0 10px; font-weight:bold}
+a:hover {background-color:white; color:rgb(0,12,34)}
+
+
+.data-container {width:100%; max-width:1400px; display:flex; justify-content:center; align-items:center}
+.hero-section-content {margin-top:auto; padding:10px 20px}
+.size-icon {font-size:26px}
+#Menu-bar {display:none; margin-left:auto}
+#close {display:none}
+@media (max-width:761px) {.menu-data {position:absolute; flex-direction:column; text-align:left; align-items:flex-end; left:100%; top:0; transform:translate(-100%); background-color:black; width:250px; padding:20px; transition:display ease-in 5s; z-index:-10}
+    #Menu-bar {display:block}
+    #close {display:block}
+}
+.hero-section-content {width:100%; height:100%; display:flex; flex-direction:column; justify-content:center; align-items:center; color:white}
+.hero-section-content h1 {font-size:40px; text-transform:capitalize; text-align:center; padding:10px 15px; color:white}
+.hero-section-content p {font-size:24px; color:rgb(165,165,165); text-transform:capitalize; text-align:center; padding:10px 15px}
+h1 i {color:rgb(255,96,123)}
+
+.reasons {margin-bottom:20px; text-align:left; display:flex; flex-direction:column; justify-content:center}
+.reason {background-color: #000000; border-left:5px solid #007bff; padding:15px; margin-bottom:15px; border-radius:5px;text-align:left; font-size: 30px;}
+.reason h2 {color: #4aa1ff;text-align:left; font-size: 35px; }
+
+
+
+h1,h2 {font-weight:300; / Slightly lighter heading weight / font-size:50px}
+h1 {font-size:2.5em; margin:0; letter-spacing:1px}
+h3 {font-size:70px; margin:10px; word-spacing:1px; letter-spacing:1px;
+    font-family: Montserat, serif}
+h4 {font-size:40px; word-spacing:8px; margin:0; line-height:70px}
+p {font-size:35px; margin:0.5em 0; line-height:1.6}
+section {padding:40px; text-align:center; background:rgba(0,0,0,0.71); border-radius:10px; box-shadow:0 4px 10px rgba(0,0,0,0.3); margin:20px; color:#eee; animation:fadeIn 1s ease; / Add animation /}
+h2 {font-size:80px; margin-bottom:30px; text-align:center; color:#ffffff; / Red heading /text-shadow:1px 1px 2px rgba(0,0,0,0.5)}
+.about {animation:slideInUp 1s ease}
+
+.comments-section {background:rgba(30,30,30,0.8); border-radius:10px; box-shadow:0 4px 8px rgba(0,0,0,0.3); padding:20px; color:#eee; position:relative; bottom:20px; left:50%; transform:translateX(-50%); width:80%; max-width:700px; z-index:1000}
+.comment-form {display:flex; flex-direction:column; margin-bottom:20px}
+.comment-form input,.comment-form textarea {background-color:#333; color:#eee; border:1px solid #555; border-radius:5px; padding:10px; margin-bottom:10px}
+.comment-form button {background:linear-gradient(to right,#4CAF50,#8BC34A); color:white; border:none; padding:10px 20px; border-radius:5px; cursor:pointer; transition:background-position 0.3s ease,transform 0.2s ease}
+.comments-container {}
+.comment {background-color:#424242; border-radius:5px; padding:10px; margin-bottom:10px; color:#eee}
+.comment-author {font-size:20px; color:#71b6ff; font-weight:bold}
+.comment-date {font-size:0.8em; float:right; color:#aaa}
+
+.bigTitle {font-size:50px}
+.smallText {font-size:30px}
+
+.photos img {width:65%; max-width:700px; margin:10px; border-radius:5px; box-shadow:0 2px 4px rgba(0,0,0,0.4); transition:transform 0.3s ease,filter 0.3s ease; / Improved transition /}
+.photos img:hover {transform:scale(1.05); filter:brightness(1.1); / Add brightness on hover /}
+
+.gallery {display: grid; grid-template-columns:repeat(auto-fill,minmax(500px,1fr)); gap:15px; padding:20px}
+.photo-item {background-color: rgba(255, 151, 0, 0); border-radius:3px; box-shadow:0 2px 10px rgba(0,0,0,0.1); overflow:hidden}
+.photo-item img {width:500px; height:500px; object-fit:cover}
+.caption {padding:15px; text-align:center; font-size:36px; color: #ffffff}
+
+.video-gallery {display:grid; grid-template-columns:repeat(auto-fill,minmax(680px,1fr)); gap:20px; padding:20px}
+.video-item {background-color: #ffe900; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.1); overflow:hidden}
+.video-item iframe {width:100%; height:560px; border:none}
+
+
+.services {display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); / Responsive grid layout /grid-gap:20px; justify-content:center; / Center services /animation:slideIn 1s ease; / Add animation /}
+.service {padding:20px; background: rgba(0, 0, 0, 0.75); border-radius:10px; box-shadow:0 4px 10px rgba(0,0,0,0.3); transition:transform 0.3s ease,box-shadow 0.3s ease; color:#eee;  / For the animation effect /}
+.service:hover {transform:translateY(-5px); box-shadow:0 8px 16px rgba(236,255,0,0.8)}
+.service img {max-width:100%; height:300px; margin-bottom:10px; border-radius:1px; animation:zoomIn 1s ease; / Add animation /}
+.service h3 {margin-top:0; color:#00ff30; font-size:1.4em}
+.price {font-weight:bold; color:#4caf50; font-size:1.2em}
+button {background:linear-gradient(to right,#4CAF50,#8BC34A); color:#ffffff; border:none; padding:10px 20px; border-radius:5px; cursor:pointer; transition:background-position 0.3s ease,transform 0.2s ease}
+button:hover {background-position:right center; transform:scale(1.05)}
+.comments-section {background:rgba(30,30,30,0.8); border-radius:10px; box-shadow:0 4px 8px rgba(255,0,0,0.3); margin:20px; padding:20px; color:#eee}
+
+footer {background:linear-gradient(to right,#000000,#000000); / Blue gradient header / color:white; text-align:center; padding:10px}
+
+@media (max-width:768px) {.services {grid-template-columns:1fr; / Stack services vertically on smaller screens / }
+    .photos img {width:100%}
+}
+@keyframes fadeIn {from {opacity:0}
+    to {opacity:1}
+}
+@keyframes slideInUp {from {transform:translateY(20px); opacity:0}
+    to {transform:translateY(0); opacity:1}
+}
+@keyframes slideIn {from {transform:translateX(-20px); opacity:0}
+    to {transform:translateX(0); opacity:1}
+}
+@keyframes zoomIn {from {transform:scale(0.8); opacity:0}
+    to {transform:scale(1); opacity:1}
+}
+
