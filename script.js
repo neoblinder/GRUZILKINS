@@ -14,33 +14,12 @@ setInterval(() => {
 },5000)
 
 
-
-
-$.ajax({
-    url: 'http://gruzilkins.com.swtest.ru/send.php', // URL на ваш PHP-скрипт
-    type: 'POST', // Метод запроса
-    data: { name: 'value',text: 'rofl' }, // Данные, которые вы хотите отправить
-    success: function(response) {
-        $('#response').html(response); // Вставляем ответ на страницу
-    },
-    error: function(xhr, status, error) {
-        console.error(error); // Выводим ошибку в консоль
-    }
-});
-
-
-
 function sendMSG(){
     const name = document.getElementById('name').value;
     const text = document.getElementById('text').value;
-
-
-
-
-
     if (text !== '') {
         $.ajax({
-            url: 'send.php',
+            url: 'http://gruzilkins.com.swtest.ru/PHP/send.php',
             method: 'post',
             dataType: 'html',
             data: { name : name, text : text.toString() },
@@ -61,15 +40,13 @@ function sendMSG(){
             }
         });
     }
-
-
 }
 
 CommentsUpdate();
-function  CommentsUpdate() {
+function CommentsUpdate() {
     const commentsDiv = document.getElementById('commentsDiv');
     commentsDiv.innerHTML = '';
-    fetch('get_comments.php') // Запрос к PHP-скрипту для получения комментариев
+    fetch('http://gruzilkins.com.swtest.ru/PHP/get_comments.php') // Запрос к PHP-скрипту для получения комментариев
         .then(response => response.json())
         .then(data => {
             if (data.success) {
